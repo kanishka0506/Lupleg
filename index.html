@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">menu</span>
+            </div>
+            <div class="header-left">
+                <span class="material-icons-outlined">search</span>
+            </div>
+            <div class="header-right">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">account_circle</span>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+
+                    <span><img src="images/beta.png" width="40" height="40" /></span>
+                    <span><img src="images/beta1.jpg" width="150" height="40" /></span>
+                    <br><br>
+                    MMS
+                    <br>
+                    <span class="a">Your plan:Basic</span>
+
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span><img src="images/graph.jpg" width="22" height="22" /></span>
+                        <span>Dashboard</span>
+
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span><img src="images/user1.png" width="22" height="22" /></span>
+                        <span>Users</span>
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span><img src="images/product1.png" width="22" height="22" /></span>
+                        <span>Products</span>
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span><img src="images/account.png" width="22" height="22" /></span>
+                        <span>Account</span>
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span><img src="images/setting1.png" width="22" height="22" /></span>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span><img src="images/login1.jpg" width="22" height="22" /></span>
+                        <span>Login</span>
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span><img src="images/register1.png" width="22" height="22" /></span>
+                        <span>Register</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- End Sidebar -->
+
+        <!-- Main -->
+        <main class="main-container">
+
+
+            <div class="main-cards">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">BUDGET</p>
+                        <span><img src="images/budget1.png" width="60" height="60" /></span>
+                    </div>
+                    <span class="text-primary font-weight-bold">$24k</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">TOTAL USERS</p>
+                        <span><img src="images/user2.jpg" width="70" height="70" /></span>
+                    </div>
+                    <span class="text-primary font-weight-bold">1,6k</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">TASKS PROGRESS</p>
+                        <span><img src="images/graph2.jpg" width="85" height="85" /></span>
+                    </div>
+                    <span class="text-primary font-weight-bold">75.5%</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">TOTAL PROFIT</p>
+                        <span><img src="images/dollar1.png" width="65" height="65" /></span>
+                    </div>
+                    <span class="text-primary font-weight-bold">$26k</span>
+                </div>
+
+            </div>
+
+
+        </main>
+        <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
